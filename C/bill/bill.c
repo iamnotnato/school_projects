@@ -50,12 +50,12 @@ int calculate_bill(void)
 	rate = ((meter * bill100[0]) + bill100[1] +  bill100[2]);
 	printf("Your final bill is : %d\n",rate);
 	}
-	else if (meter >=50)
+	else if (meter >= 50)
 	{
 	rate = ((meter * bill50[0]) + bill50[1] +  bill50[2]);
 	printf("Your final bill is : %d\n",rate);
 	}
-	else if (meter >=30)
+	else if (meter >= 30)
 	{
 	rate = ((meter * bill30[0]) + bill30[1] +  bill30[2]);
 	printf("Your final bill is : %d\n",rate);
