@@ -15,7 +15,7 @@ const int bill30[3] = {5,200,100};
 const int bill20[3] = {5,150,100};
 
 int meter_reading();
-int calculate_bill(void);
+int calculate_bill();
 int meter,rate;
 int main(void)
 {
@@ -43,7 +43,7 @@ return meter;
 /*
  * Calculate Bill
  */
-int calculate_bill(void)
+int calculate_bill()
 {
 	if (meter >= 100)
 	{
@@ -65,5 +65,5 @@ int calculate_bill(void)
 	rate = ((meter * bill20[0]) + bill20[1] +  bill20[2]);
 	printf("Your final bill is : %d\n",rate);
 	}
-
+	return rate;
 }
