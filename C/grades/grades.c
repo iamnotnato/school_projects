@@ -8,7 +8,7 @@ int marks,total,average,n,i;
 
 int main(void)
 {
-
+	/* Prompt for number of subjects */
 	printf("How many subjects?");
 	scanf("%d",&n);
 	
@@ -24,10 +24,10 @@ int main(void)
 	total = marks + total;	
 	}
 	
-	average = marks/n;
+	float(average) = total/n;
 
 	
-	printf("%d\n",total);
-	printf("%d\n",average);
+	printf("The total is : %d\n",total);
+	printf("The average is :%.1f\n",average);
 	return 0;
 }
