@@ -5,7 +5,7 @@
  * 3 units and display grade
  */
 
-int main()
+int main(void)
 {	
 	int marks;
 	int units= 3;
@@ -16,6 +16,13 @@ int main()
 	{
 	printf("Please enter the marks:\n");
 	scanf("%d",&marks);	
+	
+	/*Check for invalid marks*/
+	while(marks < 0 || marks > 100)
+	{
+	printf("Please enter the marks:\n");
+	scanf("%d",&marks);	
+	}
 	sum = sum + marks;
 	}
 	
@@ -31,6 +38,19 @@ int main()
 		case 70 ... 100:
 			printf("The grade is A\n");
 			break;
+		
+		case 60 ... 69:
+			printf("The grade is B\n");
+			break;
+		
+		case 50 ... 59:
+			printf("The grade is C\n");
+			break;
+		
+		case 40 ... 49:
+			printf("The grade is D\n");
+			break;
+		
 		default:
 			printf("The grade is F\n");
 			break;
