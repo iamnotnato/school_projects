@@ -12,7 +12,11 @@ int main()
 	/*
 	* Check for Negative values
 	*/
-	
+	while(day <= 0)
+	{
+	printf("Please enter the day of the week:\n");
+	scanf("%d",&day);	
+	}
 	
 	switch(day)
 	{
@@ -21,6 +25,15 @@ int main()
 		break;
 	case 2:
 		printf("The day is Tuesday");
+		break;
+	case 3:
+		printf("The day is Wednesday");
+		break;
+	case 4:
+		printf("The day is Thurday");
+		break;
+	case 5:
+		printf("The day is Friday");
 		break;
 	default:
 		printf("The day is a weeeknd");
