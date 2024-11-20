@@ -4,6 +4,9 @@
  * Calculate te total,average 
  * 3 units and display grade
  */
+int average = 0;
+
+int calc_grade();
 
 int main(void)
 {	
@@ -11,7 +14,7 @@ int main(void)
 	int units= 3;
 	int i= 0;
 	int sum = 0;
-	int average = 0;
+
 	for (i=0;i < units;i++)
 	{
 	printf("Please enter the marks:\n");
@@ -31,8 +34,16 @@ int main(void)
 	average = sum / units;
 	
 	printf("The average is: %d\n",average);
-
 	
+	
+	int calc_grade();
+	
+	return (0);
+}
+	
+	
+	int calc_grade()
+	{
 	switch(average)
 	{
 		case 70 ... 100:
@@ -55,6 +66,9 @@ int main(void)
 			printf("The grade is F\n");
 			break;
 	}
+	return average;	
+	}
+
 	
-	return (0);
-}
+	
+	
