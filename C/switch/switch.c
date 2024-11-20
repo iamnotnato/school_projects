@@ -3,7 +3,7 @@
 /*
  * Program to Display Days of the Week
 */
-int main()
+int main(void)
 {
 	int day;
 	printf("Please enter the day of the week:\n");
