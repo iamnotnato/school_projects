@@ -21,22 +21,22 @@ int main(void)
 	switch(day)
 	{
 	case 1:
-		printf("The day is Monday");
+		printf("The day is Monday!\n");
 		break;
 	case 2:
-		printf("The day is Tuesday");
+		printf("The day is Tuesday!\n");
 		break;
 	case 3:
-		printf("The day is Wednesday");
+		printf("The day is Wednesday!\n");
 		break;
 	case 4:
-		printf("The day is Thurday");
+		printf("The day is Thurday!\n");
 		break;
 	case 5:
-		printf("The day is Friday");
+		printf("The day is Friday!\n");
 		break;
 	default:
-		printf("The day is a weeeknd");
+		printf("The day is a weeeknd!\n");
 	}
 	return (0);
 }
